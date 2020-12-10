@@ -1,17 +1,7 @@
 provider "aws" {
   version = "3.18.0"
-  region = var.region
-}
-
-provider "aws" {
-  version = "3.18.0"
   alias = "acm"
   region = "us-east-1"
-}
-
-variable "region" {
-    type = string
-    description = "Region for bucket and cloudfront."
 }
 
 variable "domain_name" {
