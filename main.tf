@@ -4,11 +4,12 @@ terraform {
       source  = "hashicorp/aws"
       version = "3.18.0"
     }
-    acm = {
-      source  = "hashicorp/aws"
-      version = "3.18.0"
-    }
   }
+}
+
+provider "aws" {
+  alias = "acm"
+  region = "us-east-1"
 }
 
 provider "acm" {
