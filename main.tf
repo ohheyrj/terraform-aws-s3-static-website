@@ -7,9 +7,12 @@ terraform {
     acm = {
       source  = "hashicorp/aws"
       version = "3.18.0"
-      region  = "us-east-1"
     }
   }
+}
+
+provider "acm" {
+    region = "us-east-1"
 }
 
 variable "domain_name" {
