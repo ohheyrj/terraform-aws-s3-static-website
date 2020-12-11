@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  alias = "acm"
+  alias = "aws_acm"
   region = "us-east-1"
 }
 
