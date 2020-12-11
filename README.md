@@ -2,15 +2,14 @@
 
 | Name | Version |
 |------|---------|
-| acm | 3.18.0 |
 | aws | 3.18.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| acm | 3.18.0 |
 | aws | 3.18.0 |
+| aws.us\_east\_1 | 3.18.0 |
 
 ## Inputs
 
