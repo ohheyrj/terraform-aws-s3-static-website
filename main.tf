@@ -12,6 +12,11 @@ provider "aws" {
   region = "us-east-1"
 }
 
+provider "aws" {
+  region = "us-east-1"
+  alias = "acm"
+}
+
 variable "domain_name" {
   type        = string
   description = "The domain of the static website."
