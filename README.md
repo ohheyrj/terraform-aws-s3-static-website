@@ -2,15 +2,14 @@
 
 | Name | Version |
 |------|---------|
-| acm | 3.18.0 |
 | aws | 3.18.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| acm | 3.18.0 |
 | aws | 3.18.0 |
+| aws.acm | 3.18.0 |
 
 ## Inputs
 
@@ -23,5 +22,7 @@
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| bucket\_arn | The bucket created to host the static website. |
 
