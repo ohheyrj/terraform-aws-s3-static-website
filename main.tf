@@ -8,13 +8,12 @@ terraform {
 }
 
 provider "aws" {
-  alias = "aws_acm"
-  region = "us-east-1"
+  region = "eu-west-2"
 }
 
 provider "aws" {
-  region = "us-east-1"
   alias = "acm"
+  region = "us-east-1"
 }
 
 variable "domain_name" {
