@@ -7,14 +7,14 @@ terraform {
   }
 }
 
-provider "aws" {
-  alias = "us_east_1"
-  region = "us-east-1"
-}
-
 variable "domain_name" {
   type        = string
   description = "The domain of the static website."
+}
+
+variable "cert_arn" {
+    type = string
+    description = "The cert ARN to use with cloudformation"
 }
 
 variable "zone_id" {
