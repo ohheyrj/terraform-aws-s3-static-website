@@ -13,8 +13,8 @@ variable "domain_name" {
 }
 
 variable "cert_arn" {
-    type = string
-    description = "The cert ARN to use with cloudformation"
+  type        = string
+  description = "The cert ARN to use with cloudformation"
 }
 
 variable "zone_id" {
