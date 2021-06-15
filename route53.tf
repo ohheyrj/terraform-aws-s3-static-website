@@ -4,8 +4,8 @@ resource "aws_route53_record" "alias_record" {
   type    = "A"
 
   alias {
-    name                   = var.use_site_url ? aws_cloudfront_distribution.cfd_site_url.domain_name : aws_cloudfront_distribution.cfd.domain_name
-    zone_id                = var.use_site_url ? aws_cloudfront_distribution.cfd_site_url.hosted_zone_id : aws_cloudfront_distribution.cfd.hosted_zone_id
+    name                   = var.use_site_url ? aws_cloudfront_distribution.cfd_site_url[0].domain_name : aws_cloudfront_distribution.cfd[0].domain_name
+    zone_id                = var.use_site_url ? aws_cloudfront_distribution.cfd_site_url[0].hosted_zone_id : aws_cloudfront_distribution.cfd[0].hosted_zone_id
     evaluate_target_health = false
   }
 }
