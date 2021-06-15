@@ -1,7 +1,7 @@
 resource "aws_cloudfront_distribution" "cfd" {
   origin {
     # domain_name = aws_s3_bucket.bucket.bucket_regional_domain_name
-    domain_name = var.use_site_url ? aws_s3_bucket.bucket.website_domain : aws_s3_bucket.bucket.bucket_regional_domain_name
+    domain_name = var.use_site_url ? aws_s3_bucket.bucket.website_endpoint : aws_s3_bucket.bucket.bucket_regional_domain_name
     origin_id   = "S3-${aws_s3_bucket.bucket.bucket}"
   }
   aliases             = [var.domain_name]
