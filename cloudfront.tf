@@ -2,7 +2,7 @@ resource "aws_cloudfront_distribution" "cfd_site_url" {
   origin {
     domain_name = aws_s3_bucket.bucket.website_endpoint
     origin_id   = "S3-${aws_s3_bucket.bucket.bucket}"
-    custom_origin_domain {
+    custom_origin_config {
       http_port = 80
       https_port = 443
       origin_protocol_policy = "http-only"
